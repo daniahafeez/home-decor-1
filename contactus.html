@@ -1,57 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    /* #contactus{
-        background-color: white;
-        text-align: center;
-        color: black;
-        font-size: large;
-        font-weight: 100;
-    } */
-
-    h2{
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-    font-weight: 700;
-   text-align: center;
-   font-size: 50px;
-   color: black;
-}
-P{
-    font-size: 20px;
-    color:white;
-    text-align: center;
-    padding-right: 20px;
-}
+    <title>Contact Us - Home Decor</title>
+    <style>
+        /*body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }*/
         body{
-            background-image:url(scott-graham-5fNmWej4tAA-unsplash.jpg);
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 540px;
+   background-image: url(scott-graham-5fNmWej4tAA-unsplash.jpg);
+   background-size:cover ;
+    margin: 5px;
     background: linear-gradient(to bottom, rgb(105, 104, 104), rgba(7, 7, 7, 0.5)), url(scott-graham-5fNmWej4tAA-unsplash.jpg);
-      }
-    #div1{
-    padding: 0;
-    height: 100px;
-   background-color: black;
-}
-header{
-    padding: 0;
-    height: 100px;
-    background-color: black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
- ul {
+    }
+        #div1{
+        padding: 0;
+        height: 100px;
+        background-color: black;
+        }
+        header{
+        padding: 0;
+        height: 100px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        }
+        ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -65,13 +45,13 @@ H1{
     padding: 400px;
    
 } 
-a {
+li a {
     color:white;
     font-size: large;
     text-decoration: none; 
     padding-right: 50px; 
 }
-span{
+ span{
     display: block; 
     text-align: center; 
     margin-top: 16%; 
@@ -79,56 +59,44 @@ span{
     font-weight: 600;
     
 }
-.contact-container {
-                    width: 50%; 
-}
-  .contact-container p{
-                    font-size: 40px;
-                  
-                }
- form { border: 2px solid black;
-       border-radius: 10px;
-      padding: 20px;
-     width: 40%;
-     margin-top: 220px;
-     margin-left: 250px;
-     display: flex;
-     justify-content: center; /* Center horizontally */
-      align-items: center
 
-  } 
-         
-fieldset {
-             border: none;
-  }
-        
- label {
-          display: block;
-          margin-bottom: 8px;
- }
- legend{
-          font-weight: bold;
- }
-        
- input, textarea {
-                 padding: 8px;
-                 margin-bottom: 16px;
-                  box-sizing: border-box;
-                 width: 100%;
-  }
-label{
-     font-weight: bold;
-  }
-        
-button {
-         background-color: #4CAF50;
-          color: white;
-          padding: 10px 15px;
-          border: none;
-         border-radius: 5px;
-          cursor: pointer;
-}
-footer{
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        form select {
+            height: 40px;
+        }
+        form textarea {
+            height: 120px;
+        }
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        footer{
     position: fixed;
     bottom: 0;
     background-color: rgb(2, 2, 2);
@@ -141,21 +109,13 @@ footer{
 .social-icons img {
     width: 30px; 
     margin: 0 5px; }
-    @media only screen and (max-width: 768px) {
-        .item {
-            width: 45%;
-        }
-    }
-
-    @media only screen and (max-width: 480px) {
-        .item {
-            width: 100%;
-        }
-    }
-        
-</style>
-<body>
+      
+       
    
+        
+    </style>
+</head>
+<body>
     <div id="div1">
         <header class="header">
            <h1>HOME DECOR</h1>
@@ -164,38 +124,39 @@ footer{
             <li><a href="aboutus.html">about us</a></li>
             <li><a href="shop.html">shop</a></li>
             <li><a href="contactus.html">contact us</a></li>
-        
+            
         </ul>    
         </header>
-       <h2>CONTACT US!</h2>
-       <P>FEEL FREE TO CONTACT US</P>
-     </div>
-
-<form id="contactForm">
-        <fieldset>
-
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required minlength="3" maxlength="40">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required minlength="5" maxlength="100">
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required minlength="10" maxlength="500"></textarea>
-
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have a question or feedback? Feel free to get in touch!</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <select name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" name="city" placeholder="Your City" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
             <button type="submit">Submit</button>
-        </fieldset>
-    </form> 
-</div> 
-<footer>
-    <br>
+        </form>
+    </div>
+    <footer>
+        <br>
 <div class="social-icons">
-<a href="#" target="_blank"><img src="https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png" alt="Facebook"></a>
-<a href="#" target="_blank"><img src="https://i.pinimg.com/474x/2c/8c/6f/2c8c6fb02155d85cedf9fc71a53556c7.jpg" alt="Twitter"></a>
-<a href="#" target="_blank"><img src="data:image/jpeg;base64,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frBDSmMfufk92k/L3ruAAirgEAARAAEQABEAARDm6V0arlvlkrIrY+VcjOkDXLE2VpY8XBWTHuY7lNzqFzwzi2pJprhTCqJbiMNCxdss+R8a6zn26Ka+a01yPYygnwqRh6HSHnsVkytBHSyFcWNR9qo6P4DNfovqyZlYSfevyEX1OTqnYVmahuteBVHy6jp/gku9fkMfgku9fkPRRv6p2FY+sDWuRKo0zqO1LBT7x+Q0zwE+8fkHqsnVOwrc2obrXDsqPLZWd+zR1ng35GeazRd3gp+ax6vIPZOwqUypZrG0KPWVnlsgSGeiL/BWeazzT0LiPAWeazNsUnVOwqbHUs6w2hR2yB5bYEjs0Hif2e3zJHnermLlwYezrSj62iVFE+/7TsKmMq4gLl7doUasgaewuTUYxcpN72KinJtvgSS4WTnB6hYibTunXTHjS7efkWz6yYaE1dw2E21Qzsayd1mUrHzJ8EVzLIt4GuAuVpqMdp4W9A8t2oZveeF1wtR9T1hksRiEne12kNjVKe3z/UTcAkk3XH1VVLUyGSU3O4ah2IADxR0AARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEQABEAARAAEX/9k=" alt="Instagram"></a>
+    <a href="#" target="_blank"><img src="https://toppng.com/uploads/preview/facebook-black-white-icon-facebook-face-book-png-facebook-icon-for-footer-11562873944v8l8yjbnby.png" alt="Facebook"></a>
+    <a href="#" target="_blank"><img src="https://i.pinimg.com/474x/2c/8c/6f/2c8c6fb02155d85cedf9fc71a53556c7.jpg" alt="Twitter"></a>
+    <a href="#" target="_blank"><img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg" alt="Instagram"></a>
 </div>
-    &copy; 2024 HOME DECOR. All rights reserved.
-</footer>
-   
+        &copy; 2024 HOME DECOR. All rights reserved.
+    </footer>
+        
 </body>
 </html>
+
